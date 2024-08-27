@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    } 
+    
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    } 
+    
+    nav li {
+    display: inline-block;
+    margin-right: 15px;
+    }
+    
+    main {
+    padding: 20px;
+    }
+    
+    .hero {
+    text-align: center;
+    padding: 50px;
+    }
+    
+    .hero img {
+    width: 500px;
+    max-width: 100%;
+    }
+    
+    .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    .feature-card {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    }
+    
+
+    .contact-form {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-form input, .contact-form textarea 
+     {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-form button {
+        padding: 10px;
+        background-color: #333;
+        color:  #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .contact-form #success-message {
+        display: none;
+        margin-top: 10px;
+        color: green;
+    }

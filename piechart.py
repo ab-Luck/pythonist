@@ -1,7 +1,18 @@
-import matplotlib.pyplot as mp 
-marks=[64,56,55,58,60,69,72]
-bins=['label1','label2','label3','label4','label5','label6','label7',]
-color=['green','white','cyan','yellow','black','blue','pink']
-mp.pie(marks,labels=bins,colors=color,startangle=90,shadow='true',explode=(0.2,0,0,0.1,0,0.1,0),autopct='%1.2f%%',rotatelabels=True,counterclock=True)
-mp.legend()
-mp.show()
+import matplotlib.pyplot as plt
+
+# Sample data (adjust as needed)
+team_members = ['Mughees', 'Rizwan', 'Vishal', 'Jahanzeb', 'Zain',
+                'Abrar', 'Farhan', 'Abdulrehman', 'Haroon', 'Riaz']
+
+performance_points = [100, 80, 40, 70, 45, 90, 95, 75, 50, 100]  # Adjust values
+
+# Define colors for each slice
+colors = ['green', 'blue', 'red', 'orange', 'purple', 'yellow', 'cyan', 'magenta', 'black', 'gray']
+
+# Create the pie chart with colors
+plt.figure(figsize=(8, 8))
+plt.pie(performance_points, labels=team_members, autopct='%1.1f%%', colors=colors)
+plt.title("RepTech Team Performance")
+
+# Show the chart
+plt.show()
